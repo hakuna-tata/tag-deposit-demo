@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "allowJs": true,
+        "target": "es5",
+        "strict": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strictNullChecks": false,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./node_modules/vue/types"
+        ]
+    },
+    "include": [
+        "./src"
+    ]
+}
