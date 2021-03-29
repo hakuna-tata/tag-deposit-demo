@@ -6,7 +6,7 @@
             </div>
             <div class="btn-box">
                 <div class="btn-warp">
-                    <a class="btn-inner">增加</a>
+                    <a class="btn-inner" @click="appendItem">增加</a>
                 </div>
             </div>
         </div>

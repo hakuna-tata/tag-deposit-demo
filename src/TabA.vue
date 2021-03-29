@@ -30,6 +30,11 @@
                 ></Item>
             </div>
         </div>
+        <div v-show="showDialog">
+            <Dialog
+                @showDialog="setDialog"
+            ></Dialog>
+        </div>
     </div>
 </template>
 
@@ -37,6 +42,7 @@
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
 import Item, { IItem } from "./Item.vue";
+import Dialog from "./Dialog.vue";
 
 interface Btn {
     name: string;
@@ -46,7 +52,8 @@ interface Btn {
 
 @Component({
     components: {
-        Item
+        Item,
+        Dialog
     }
 })
 export default class TabA extends Vue {

@@ -6,9 +6,14 @@
             </div>
             <div class="btn-box">
                 <div class="btn-warp">
-                    <a class="btn-inner">浮层</a>
+                    <a class="btn-inner" @click="setDialog({show: true})">浮层</a>
                 </div>
             </div>
+        </div>
+        <div v-show="showDialog">
+            <Dialog
+                @showDialog="setDialog"
+            ></Dialog>
         </div>
     </div>
 </template>
@@ -16,13 +21,22 @@
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
+import Dialog from "./Dialog.vue";
 
-@Component({})
+@Component({
+    components: {
+        Dialog
+    }
+})
 export default class TabC extends Vue {
-    showPage = false;
+    showDialog = false;
 
-    setPage(show: boolean): void {
-        this.showPage = show;
+    setDialog({
+        show
+    }: {
+        show: boolean;
+    }): void {
+        this.showDialog = !!show;
     }
 }
 </script>

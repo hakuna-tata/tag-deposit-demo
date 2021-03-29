@@ -1,7 +1,7 @@
 <template>
     <div
         class="root"
-        td-appid="tagdeposit_demo_APP"
+        td-appid="tagdeposit_demo_app"
         td-pageid="app_page"
     >
         <div class="tab-bar">

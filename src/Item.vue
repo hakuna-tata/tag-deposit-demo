@@ -1,7 +1,16 @@
 <template>
     <div class="item">
         <div class="item-wrap">
-            <div class="item-inner"></div>
+            <div
+                class="item-inner"
+                @click="
+                    $emit('showDialog', {
+                        show: true,
+                        item: itemData,
+                        el: $event.currentTarget
+                    })
+                "
+            ></div>
         </div>
     </div>
 </template>
