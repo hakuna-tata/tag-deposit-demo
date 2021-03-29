@@ -1,7 +1,8 @@
 <template>
-    <div class="container"
-        td-appid="tagdeposit_demo_tabA"
-        td-pageid="tabA_page"
+    <div
+        class="container"
+        td-moduleid="tabA_container"
+        td-expose="1"
     >
         <div class="block">
             <div class="header">

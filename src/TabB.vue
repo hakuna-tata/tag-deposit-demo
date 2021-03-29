@@ -1,5 +1,9 @@
 <template>
-    <div class="container">
+    <div
+        class="container"
+        td-moduleid="tabB_container"
+        td-expose="1"
+    >
         <div class="block">
             <div class="header">
                 <span>按钮区域</span>

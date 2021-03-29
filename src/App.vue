@@ -4,12 +4,13 @@
         td-appid="tagdeposit_demo_app"
         td-pageid="app_page"
     >
-        <div class="tab-bar">
+        <div class="tab-bar" td-moduleid="tab_bar">
             <div
                 v-for="(item, key) in tabMap"
                 :key="key"
                 class="tab-item"
                 @click="changeTab(key)"
+                :td-itemid="item.name"
             >
                 <span class="tab-name">{{ item.name }}</span>
             </div>
